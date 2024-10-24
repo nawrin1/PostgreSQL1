@@ -28,11 +28,29 @@ A schema is a structural representation of the data within that database. Schema
 
 ## Explain the purpose of the WHERE clause in a SELECT statement.
 The where clause is used to specify a condition that must be met for a row to be included in the result set. This allows you to retrieve only the rows that meet specific criteria, and exclude the ones that don't.
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
 
 
 ## What are the LIMIT and OFFSET clauses used for?
--LIMIT: LIMIT clause restricts the number of fetched data. That is if LIMIT is defined 2, then only 2 records for a table will be fetched.
--OFFSET: OFFSET defies how may values to ignore from the first. That is if OFFSET is defined 3, then first 3 value will be ignored and the fetching will be started from the fourth value.
+- LIMIT: LIMIT clause restricts the number of fetched data. That is if LIMIT is defined 2, then only 2 records for a table will be fetched.
+```
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+```
+- OFFSET: OFFSET defies how may values to ignore from the first. That is if OFFSET is defined 3, then first 3 value will be ignored and the fetching will be started from the fourth value.
+```
+SELECT column_name(s)
+FROM table_name
+LIMIT number
+OFFSET number;
+```
+  
 
 
 ## How can you perform data modification using UPDATE statements?
@@ -42,6 +60,30 @@ UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
+
+## Explain the GROUP BY clause and its role in aggregation operations.
+The GROUP BY clause is used to divide the rows of a table into groups that have matching values in one or more columns. The GROUP BY statement is often used with aggregate functions ( COUNT() , MAX() , MIN() , SUM() , AVG() ) to group the result-set by one or more columns. 
+```
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+```
+
+## How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?
+In PostgreSQL,  aggregate functions like COUNT, SUM, and AVG are used to perform calculations across multiple rows in a table.
+- COUNT : COUNT() function is used to perform a count.
+  ```
+  SELECT COUNT(*) FROM table_name;
+  ```
+- SUM : SUM() is used to calculate the total of values
+  ```
+  SELECT SUM(column_name) FROM table_name;
+  ```
+- AVG : AVG() is used to calculate the average:
+  ```
+  SELECT AVG(column_name) FROM table_name;
+  ```
 
 
 
