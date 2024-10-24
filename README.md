@@ -21,12 +21,12 @@ A schema is a structural representation of the data within that database. Schema
 
 
 
-## What is the difference between the VARCHAR and CHAR data types?
+## What is the difference between the VARCHAR and CHAR data types? :ab:
 - CHAR: Char uses a fixed amount of space for each value, regardless of the length of the stored string
 - VARCHAR: In contrast, varchar only uses the space needed to store the data.
 
 
-## Explain the purpose of the WHERE clause in a SELECT statement.
+## Explain the purpose of the WHERE clause in a SELECT statement. :question:
 The where clause is used to specify a condition that must be met for a row to be included in the result set. This allows you to retrieve only the rows that meet specific criteria, and exclude the ones that don't.
 ```
 SELECT column1, column2, ...
@@ -35,7 +35,7 @@ WHERE condition;
 ```
 
 
-## What are the LIMIT and OFFSET clauses used for?
+## What are the LIMIT and OFFSET clauses used for? :chains:
 - LIMIT: LIMIT clause restricts the number of fetched data. That is if LIMIT is defined 2, then only 2 records for a table will be fetched.
 ```
 SELECT column_name(s)
@@ -53,7 +53,7 @@ OFFSET number;
   
 
 
-## How can you perform data modification using UPDATE statements?
+## How can you perform data modification using UPDATE statements? :hammer_and_wrench:
 The UPDATE statement is used to modify the existing records in a table. The UPDATE statement can update single or multiple columns using the SET clause. The WHERE clause is used to specify the condition for selecting the rows to be updated. The syntax is:
 ```
 UPDATE table_name
@@ -61,7 +61,7 @@ SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
 
-## Explain the GROUP BY clause and its role in aggregation operations.
+## Explain the GROUP BY clause and its role in aggregation operations. :link:
 The GROUP BY clause is used to divide the rows of a table into groups that have matching values in one or more columns. The GROUP BY statement is often used with aggregate functions ( COUNT() , MAX() , MIN() , SUM() , AVG() ) to group the result-set by one or more columns. 
 ```
 SELECT column_name(s)
@@ -70,7 +70,7 @@ WHERE condition
 GROUP BY column_name(s)
 ```
 
-## How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?
+## How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL? :heavy_plus_sign: :heavy_division_sign:
 In PostgreSQL,  aggregate functions like COUNT, SUM, and AVG are used to perform calculations across multiple rows in a table.
 - COUNT : COUNT() function is used to perform a count.
   ```
@@ -85,6 +85,8 @@ In PostgreSQL,  aggregate functions like COUNT, SUM, and AVG are used to perform
   SELECT AVG(column_name) FROM table_name;
   ```
 
+## What is the purpose of an index in PostgreSQL, and how does it optimize query performance? :arrow_upper_right:
+Indexes are a common way to enhance database performance. An index allows the database server to find and retrieve specific rows much faster than it could do without an index. Indexing makes columns faster to query by creating pointers to where data is stored within a database. It creates a sorted data structure (e.g., B-tree) that allows the database to quickly locate and access the desired rows without scanning the entire table.
 
 
 
