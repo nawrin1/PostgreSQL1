@@ -70,7 +70,7 @@ WHERE condition
 GROUP BY column_name(s)
 ```
 
-## How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL? :heavy_plus_sign: :heavy_division_sign:
+## How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL? :heavy_plus_sign: 
 In PostgreSQL,  aggregate functions like COUNT, SUM, and AVG are used to perform calculations across multiple rows in a table.
 - COUNT : COUNT() function is used to perform a count.
   ```
