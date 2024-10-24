@@ -7,11 +7,14 @@
 ## What is PostgreSQL? :gear:
 PostgreSQL is an object-relational database management system. Using object-oriented features of PostgreSQL, programmers can easily communicate with the database servers. Helps to define complex custom data types and inheritance, or parent-child relationships, between tables.
 
->
+
 
 ## What is the purpose of a database schema in PostgreSQL? :wrench:
 A schema is a structural representation of the data within that database. Schema is used to organize related objects, separate data for different applications or users, and improve database security and scalability.
 
+
+
+>
 >
 
 ## Explain the primary key and foreign key concepts in PostgreSQL. :old_key:
